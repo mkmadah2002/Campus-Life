@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscreption</title>
+    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav-cantaner">
+            <h1 class="logo">
+                [Youcode]
+            </h1>
+            <nav class="compus-live-nav">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#">Campus</a>
+                    </li>
+                    <li>
+                        <a href="#">clubs & activites</a>
+                    </li>
+                    <li>
+                        <a href="#">Evenements</a>
+                    </li>
+                    <li>
+                        <a href="#">Conseils aux nouveux</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+
+                <div class="buttens-aria">
+                    <a href="#"><img style="height: max-content;" src="/assets/icons/⌕.svg" alt=""></a>
+                    <a class="nav-btn">
+                        rejoindre <br>
+                        l'aventure
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="form-contaner">
+            <div>
+                <p>Ton aventure commence par une rencontre</p>
+                <h1>Ton aventure commence par une rencontre</h1>
+            </div>
+            <form name="inscreption">
+                <div>
+                    <label for="nom">nom</label><br>
+                    <input type="text" class="input" placeholder="nom" name="Nom">
+
+                </div>
+
+                <div>
+                    <label for="prenom">prenom</label><br>
+                    <input type="text" class="input" placeholder="prenom" name="prenom">
+                </div>
+                <div>
+                    <label for="email">email</label><br>
+                    <input type="email" class="input" placeholder="email" name="email">
+
+                </div>
+                <div>
+                    <label for="Telephon">Telephon</label><br>
+                    <input type="text" class="input" placeholder="Telephon" name="Telephon">
+
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="choix" value="Asfi" id="">
+                        <label for="Asfi">Asfi</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Youssoufia" name="choix" id="">
+                        <label for="Asfi" >Youssoufia</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="Nador" name="choix" id="">
+                        <label for="Nador">Nador</label>
+                    </div>
+                    <button class="btn-inscre" type="submit">S'inscrire</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer  >
+        <div class="footer-contaner">
+            <div>
+                <h1 class="logo">
+                    [Youcode]
+                </h1>
+                <p>
+                    Une communauté d'apprenants, de <br> projets et d'événements pour te faire <br> grandir.
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <p><br>
+                        CAMPUS
+                    </p>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Explorer le campus
+                    </a>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Clubs & activités
+                    </a>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Clubs & activités
+                    </a>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Événements
+                    </a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <p>RÉSEAUX</p>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href=""><br>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href=""><br>
+                        Discord
+                    </a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="down">
+            <p>© 2024 YouCode Campus Life. Tous droits réservés.</p>
+            <p>Mentions légales</p>
+            <p>Politique de confidentialité</p>
+        </div>
+    </footer>
+    <script>
+        document.forms.inscreption.addEventListener("submit",(e)=>{
+            e.preventDefault();
+             
+
+             localStorage.setItem("nom",document.forms.inscreption.Nom.value)
+             localStorage.setItem("prenom",document.forms.inscreption.prenom.value)
+             localStorage.setItem("email",document.forms.inscreption.email.value)
+             localStorage.setItem("choix",document.forms.inscreption.choix.value)
+             console.log(
+                             localStorage.getItem("nom"),
+                            localStorage.getItem("prenom"),
+                            localStorage.getItem("email"),
+                            localStorage.getItem("choix")
+             )
+
+        }) 
+
+    </script>
+</body>
+
+</html>
