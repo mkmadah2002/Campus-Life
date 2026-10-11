@@ -45,9 +45,15 @@ header{
     justify-content: center;
     flex-direction: row;
     list-style: none;
+    color: black;
     gap: 20px;
 }
-
+.nav-menu li a  {
+    color: black
+}
+.nav-menu :hover {
+    color: blue
+}
 
 
 /* hero sec */
@@ -161,9 +167,8 @@ header{
 .stats{
     border: 1px solid black;
     display: flex;
-    height: 92px;
+    padding: 40px;
     height: 3rem;
-    padding: 20px;
     border: 1px solid black;
 }
 
@@ -175,9 +180,11 @@ header{
     height: 100%;
     border-left: 1px solid;
 }
+
 .stats-text{
     margin-left: 2rem;
 }
+
 footer{
     display: flex;
     align-items: center;
@@ -221,6 +228,7 @@ footer ul{
     gap: 1rem;
     padding: 4rem;
 }
+
 form{
     width: 100%;
 }
@@ -242,4 +250,29 @@ form div {
 }
 .down p{ 
     display: block;
+}
+.env{
+    height: 282px;
+    background-color: #F4F7FC;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.h {
+    font-family: sans-serif;
+    color: blue;
+}
+.env-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    width: 40%;
+    justify-content: space-evenly;
+}
+.h2 {
+    font-size: 3rem;
+}
+.nav-btn:hover{
+    background-color: powderblue;
 }
